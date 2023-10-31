@@ -2,6 +2,7 @@
 
 import { Col, Image, Row } from "react-bootstrap";
 import { getFormatedDate } from "../utils/getFormatedDate";
+import CommentForm from "./CommentForm";
 
 const DishDetail = ({ dish }) => {
   const renderDish = (dish) => {
@@ -27,6 +28,7 @@ const DishDetail = ({ dish }) => {
               </p>
             </div>
           ))}
+          <CommentForm />
         </Col>
       </Row>
     );
